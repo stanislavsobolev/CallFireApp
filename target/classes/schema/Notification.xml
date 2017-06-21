@@ -1,0 +1,24 @@
+<n:TextSent xmlns:n="http://api.callfire.com/notification/xsd" xmlns="http://api.callfire.com/data"
+            xmlns:a="http://api.callfire.com/annotations">
+    <n:SubscriptionId>752756003</n:SubscriptionId>
+    <n:AccountId>247002003</n:AccountId>
+    <Text id="1665885613003">
+        <FromNumber>67076</FromNumber>
+        <ToNumber>14243876936</ToNumber>
+        <State>FINISHED</State>
+        <BatchId>21836793003</BatchId>
+        <BroadcastId>22937441003</BroadcastId>
+        <ContactId>1203264742003</ContactId>
+        <Inbound>false</Inbound>
+        <Created>2017-06-21T12:45:57Z</Created>
+        <Modified>2017-06-21T12:45:57Z</Modified>
+        <FinalResult>SENT</FinalResult>
+        <Message>Test message for broadcast</Message>
+        <TextRecord id="948261139003">
+            <Result>SENT</Result>
+            <FinishTime>2017-06-21T12:45:57Z</FinishTime>
+            <BilledAmount>1.0</BilledAmount>
+            <Message>Test message for broadcast</Message>
+        </TextRecord>
+    </Text>
+</n:TextSent>

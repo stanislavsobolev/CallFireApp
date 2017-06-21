@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://api.callfire.com/notification/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TextSent" type="xsd:TextSentType" xmlns:xsd="http://api.callfire.com/notification/xsd"/>
+  <xs:complexType name="TextSentType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="SubscriptionId"/>
+      <xs:element type="xs:string" name="AccountId"/>
+      <xs:element name="Text">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="FromNumber"/>
+            <xs:element type="xs:string" name="ToNumber"/>
+            <xs:element type="xs:string" name="State"/>
+            <xs:element type="xs:string" name="BatchId"/>
+            <xs:element type="xs:string" name="BroadcastId"/>
+            <xs:element type="xs:string" name="ContactId"/>
+            <xs:element type="xs:string" name="Inbound"/>
+            <xs:element type="xs:string" name="Created"/>
+            <xs:element type="xs:string" name="Modified"/>
+            <xs:element type="xs:string" name="FinalResult"/>
+            <xs:element type="xs:string" name="Message"/>
+            <xs:element name="TextRecord">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element type="xs:string" name="Result"/>
+                  <xs:element type="xs:string" name="FinishTime"/>
+                  <xs:element type="xs:string" name="BilledAmount"/>
+                  <xs:element type="xs:string" name="Message"/>
+                </xs:sequence>
+                <xs:attribute type="xs:string" name="id"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute type="xs:string" name="id"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

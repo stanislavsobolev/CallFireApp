@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CallFireSender:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="CallFireSender.war">
+      <element id="artifact" artifact-name="CallFireSender:war exploded" />
+    </root>
+  </artifact>
+</component>

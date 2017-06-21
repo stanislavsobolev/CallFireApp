@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://api.callfire.com/notification/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TextSent" type="xsd:TextSentType" xmlns:xsd="http://api.callfire.com/notification/xsd"/>
+  <xs:complexType name="TextSentType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="SubscriptionId"/>
+      <xs:element type="xs:string" name="AccountId"/>
+      <xs:element ref="data:Text" xmlns:data="http://api.callfire.com/data"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
