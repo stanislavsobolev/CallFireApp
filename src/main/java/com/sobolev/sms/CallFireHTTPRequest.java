@@ -19,17 +19,17 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
 
 /**
- * HTTPRequest has main() method which runs two requests:
+ * CallFireHTTPRequest has main() method which runs two requests:
  * sendCallFireTextRequest() to start message sending
  * sendCallFireSubscriptionRequest() to create and subscribe on broadcast actions notification
  */
-public class HTTPRequest {
+public class CallFireHTTPRequest {
 
     private HttpClient client;
     private String broadcastId = "";
 
     public static void main(String[] args) throws Exception {
-        HTTPRequest http = new HTTPRequest();
+        CallFireHTTPRequest http = new CallFireHTTPRequest();
         http.sendCallFireTextRequest();
         http.sendCallFireSubscriptionRequest();
     }

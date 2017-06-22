@@ -1,0 +1,10 @@
+This application will start local Spring Boot based web service, send 2 requests to callfire.com
+and listen for the requests from CallFire Subscription.
+
+To run application:
+1. Open src/main/resources/config.properties
+2. Put your login and password values from API Access page
+3. Start ngrok.exe and put created address to the endpoint value
+4. Run CallFireServicePublisher to publish service
+5. Run CallFireHTTPRequest to send text and subscribe requests
+6. Wait for request from CallFire Subscription
